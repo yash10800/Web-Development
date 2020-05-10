@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/color-picker.min.css" />  
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+            }
+            input[color-picker]{
+                margin-bottom: 10px;
+                height: 30px;
+                width:30px;
+                font-size:25px;
+                border:2px solid black;
+                border-radius: 30px;
+            }
+            input{
+                height: 40px;
+                width:200px;
+                font-size:25px;
+                border:2px solid black;
+                border-radius: 10px;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+        <script src="js/color-picker.min.js"></script>
+        <script>var app = angular.module('app', ['colorpicker']);</script>  
+        <script>
+            app.controller('AppCtrl', ['$scope', function ($scope) {
+                $scope.var2 = '#ffffff';
+                $scope.var4 = '#ffffff';
+                $scope.fname="Yash";
+                $scope.lname="Patel";
+                $scope.phone="9157479553";
+                $scope.gender="Male";
+                $scope.hobbies=['Singing','Mobile games','Reading'];
+                $scope.lang=['C','Java','Python','HTML','CSS'];
+                $scope.var3 = '#000000';
+             
+            }]);
+        </script>
+    </head>
+    <body style="background-size:cover;">
+        
+        <ceter>
+    <form action="" method="post">
+        <div class="main" ng-app="app" ng-controller="AppCtrl">
+        <div style="background:{{var2}};width:100%;height:100vh;margin-top:-20px">
+            <center>
+            <h1>Pract_9</h1>
+            
+            <input color-picker                            
+            color-picker-model="var3"
+            color-picker-output-format="'rgba'"     
+            color-picker-show-value="false"                      
+            ng-style="{background: var3}"/>
+            <input color-picker                            
+            color-picker-model="var4"
+            color-picker-output-format="'rgba'"     
+            color-picker-show-value="false"                      
+            ng-style="{background: var4}"/>    
+            <input color-picker                            
+            color-picker-model="var2"
+            color-picker-output-format="'rgba'"     
+            color-picker-show-value="false"                      
+            ng-style="{background: var2}"/>    
+                  
+            <div class="main2" style="background:{{var4}};font-size:30px;width:500px;border:2px solid black;border-radius:15px">
+            <label style="color:{{var3}}">First name:</label>{{fname}}</label>
+                <label style="color:{{var3}};margin-left:50px;">Last name:</label><label>{{lname}}</label><br><br>
+                <label style="color:{{var3}}">Gender:</label><label>{{gender}}</label>
+                <label style="color:{{var3}};margin-left:50px;">Phone:</label><label>{{phone}}</label><br><br>
+
+                <div style="display:flex;justify-content: center;">
+                    
+            <div><label style="color:{{var3}}">Hobbies</label><label ng-repeat='x in hobbies'><br>{{x}}</label></div>
+        <div><label style="color:{{var3}};margin-left:50px;">Languages Konwn</label><label ng-repeat='i in lang'><br>{{i}}</label></div>
+        
+                </div>
+                
+                
+            </div>
+            <div class="input" style="margin-top: -350px;margin-left: -1100px;">
+                <label style="color:{{var3}};font-size:25px;">First name:</label><input type="text" ng-model="fname"><br>
+                <label style="color:{{var3}};font-size:25px;">Last name:</label><input type="text" ng-model="lname"><br>
+                <label style="color:{{var3}};font-size:25px;">Gender:</label><input type="text" ng-model="gender"><br>
+                <label style="color:{{var3}};font-size:25px;">Phone no:</label><input type="text" ng-model="phone"><br>
+                <label style="color:{{var3}};font-size:25px;">Hobbies:</label><input type="text" ng-model="hobbies"><br>
+                <label style="color:{{var3}};font-size:25px;">Language Known:</label><input type="text" ng-model="lang"><br>
+                <label style="color:{{var3}};font-size:25px;">Image:</label><input type="text" ng-model="var7"><br>
+                <label style="color:{{var3}};font-size:25px;">Background:</label><input type="text" ng-model="img">
+            </div>
+            <div ng-init="var7 = 'xyz'" style="margin-top: -360px;margin-left: 1000px;width:300px;height:350px">
+                <img ng-src="{{var7}}" width="350px" height="350px" style="border:3px solid black;border-radius:20px;">
+                </div>
+        </center>
+    </div>
+        </div>
+    </form>
+    
+    </ceter>
+        <script src="" async defer></script>
+    </body>
+</html>

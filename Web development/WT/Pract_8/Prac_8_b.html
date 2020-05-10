@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merging</title>
+	<style>
+		body{
+			color: white;
+			
+			background: #BA8B02;
+			background: linear-gradient(to right, #181818, #BA8B02); 
+		}
+		.main{
+			margin-left: 200px;
+			width: 300px;
+		}
+		.button1,.button2,.button3{
+			width: 300px;
+			height: 150px;
+			background: none;
+			border: 10px solid black;
+			border-radius: 30px;
+			color: white;
+			font-size: 30px;
+			vertical-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center" style="margin-top: 40px;font-size: 50px;">Merge Two Array:</h1>
+	<div class="main">
+		<button onclick="readf1()" class="button1"><h3>Click here for array1</h3></button><br>
+		<h2 style="font-size: 100px;margin-top: -20px;margin-bottom: -20px;margin-left: 120px;">+</h2>
+		<button onclick="readf2()" class="button2"><h3>Click here for array2</h3></button><br>
+		
+		
+	</div>
+	<div class="part" style="margin-top: -370px;margin-left:700px;width:300px ;">
+		<button onclick="merge_array()" class="button3" ><h3>Click here for merging</h3></button>
+	</div>
+	<h1 style="font-size: 50px;color: white;margin-left: 710px;margin-top: 30px;font-family: cursive;">Your Answer is here:</h1>
+	<p id='p1' style="width: 500px;height: 200px;font-size: 50px;margin-left: 700px;margin-top: -20px;border: 10px solid white;border-radius: 30px;"><center></center></p>
+	<script>
+		var ar1=[]
+		var ar2=[]
+		function readf1(){
+			var n = prompt("Enter length of array1:");
+			while(n--){
+				var j = prompt("Enter element:");
+				ar1=ar1.concat(j);
+			}
+		}
+		function readf2(){
+			var n = prompt("Enter length of array1:");
+			while(n--){
+				var j = prompt("Enter element:");
+				ar2=ar2.concat(j);
+			}
+		}
+		function merge_array(){
+		    var ans = [];
+		    var len = ar1.length;
+		    while(len--) {
+		        var i = ar1[len];
+		        if(!ans.includes(i)) 
+		        { 
+		            ans=ans.concat(i);
+		        }
+		    }
+		    len = ar2.length;
+
+		    while(len--) {
+		        var i = ar2[len];
+		        if(!ans.includes(i)) 
+		        { 
+		        	ans=ans.concat(i);
+		        }
+		    }
+		    ans.sort();
+		    document.getElementById('p1').innerHTML = "<h3>"+ans+"</h3>";
+		}
+	</script>
+</body>
+</html>

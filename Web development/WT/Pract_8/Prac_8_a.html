@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial</title>
+	<style>
+		body{
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body >
+	<div class="fact" style="width: 100%;text-align: center;color: white;font-size: 60px; margin-top: 100px;box-shadow: 0px 0px 20px white;">>Factorial<</div>
+	<button onclick="f1()" style="margin-top: 100px;margin-left: 40%;"><h2>Click here to find factorial:</h2></button>
+	</div>
+	<h1 style="text-align: center;font-size: 40px;font-family: cursive;">Answer</h1>
+	<p id="p1" style="color: white;width: 600px;height: 200px;border: 10px solid white;margin-left: 450px; margin-top: 10px;text-align: center;vertical-align: middle;font-size: 25px;border-radius: 30px;"></p>
+	<script>
+		function f1() {
+			var n = prompt("Enter a number : ");
+			if(n>=0){
+				if(n==0){
+						document.getElementById("p1").innerHTML = "<h1>Factorial of "+n+" is : "+1+"</h1>";
+				}
+				else{
+				var i=0;
+				var ans=1;
+				for(i=n;i>0;i--){
+					ans*=i;
+				}
+				document.getElementById("p1").innerHTML = "<h1>Factorial of "+n+" is : "+ans+"</h1>";
+			}
+		}
+			else{
+				document.getElementById('p1').innerHTML = "<h1>Please enter a valid number:</h1>";
+			}
+		}
+	</script>
+</body>
+</html>

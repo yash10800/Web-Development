@@ -1,0 +1,396 @@
+Body{
+    background: black;
+}
+.welcome{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    height: 900px;
+    margin-top: 200px;        
+}
+.welcome hr{
+    height: 3px;
+    background-color: white;
+}
+#first{
+    animation-name: first1;
+    animation-duration: 3s;
+    
+    color: transparent;
+}
+@keyframes first1{
+    0%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 600px;
+        opacity: 0;
+    }
+    25%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 0px;
+        opacity: 1;
+    }
+    100%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 600px;
+        opacity: 0;
+    }
+}
+#second{
+    animation-name: second1;
+    animation-duration: 2.5s;
+    color: transparent;
+    animation-delay: 0.5s;
+}
+@keyframes second1{
+    0%{
+        text-shadow: 10px 10px 10px orange;
+        margin-left: 600px;
+        opacity: 0;
+        color: white;
+    }
+    25%{
+        text-shadow: 10px 10px 10px orange;
+        margin-left: 0px;
+        opacity: 1;
+        color: white;
+        display: inline;
+    }
+    100%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 600px;
+        opacity: 0;
+    }
+}
+#third{
+    animation-name: third1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    
+    color: transparent;
+}
+@keyframes third1{
+    0%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 600px;
+        opacity: 0;
+    }
+    25%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 0px;
+        opacity: 1;
+    }
+    100%{
+        text-shadow: 10px 10px 10px orange;
+        color: white;
+        margin-left: 600px;
+        opacity: 0;
+    }
+}
+.main,.nav{
+    animation-name: main1;
+    animation-duration: 5s;
+    margin-top: -1100px;
+    scroll-behavior: smooth;
+    
+}
+@keyframes main1{
+    from{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.main{
+    margin-top: -1500px;
+}
+#button1{
+    animation-name: yash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes yash{
+    from{
+        box-shadow: 0px;
+    }
+    to{
+        box-shadow: 0px 0px 30px white;
+    }
+}
+/*@keyframes yash1{
+    from{
+        box-shadow: 0px;
+    }
+    to{
+        box-shadow: 5px 5px 10px 5px grey;
+    }
+}*/
+#key {
+    background-color:black;
+    margin-top: 10px;
+    color: cornsilk;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  #key:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: orange;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  #key:hover:before, #key:focus:before, #key:active:before {
+    left: 0;
+    right: 0;
+}
+.iphone{
+    background:no-repeat url("iphone.jpg");
+    margin-top: 600px;
+    background-size: 1500px;
+    height: 700px;
+    width: 90%;
+    
+}
+
+#div1{
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    transition-duration: 1s;
+    border-radius: 30px;
+  
+}
+#div1:hover{
+  
+    background-color: rgb(56, 55, 55);
+    color: black;
+    animation-name: yash1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+h1{
+    font-size: 70px;
+}
+#img{
+    background: url('iphone11.jpg');
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    font-size: 40px;
+    color: transparent;
+    mix-blend-mode: multiply;
+    transition-duration: 1s;
+    
+}
+#img:hover{
+    background:rgb(20, 20, 20);
+    
+    color: white;
+}
+#img1{
+    background: url('iphone11pro.jpeg');
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    font-size: 40px;
+    color: transparent;
+    mix-blend-mode: multiply;
+    transition-duration: 1s;
+    
+}
+#img1:hover{
+    background:rgb(20, 20, 20);
+    
+    color: white;
+}
+.flip-box {
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    
+  }
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotatey(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotatey(180deg);
+  }
+  #button2{
+    border: 2px solid white;
+    width: 150px;
+    height: 70px;
+    background: black;
+    color: white;
+    font-size: 30px;
+    transition-duration: 1s;
+  }
+.img1{
+    
+    
+    width: 1000px;
+    height: 800px;
+    margin-top: 00px;
+    animation-name: ani1;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.img2{
+    margin-left: 400px;
+    
+    width: 1000px;
+    height: 800px;
+    margin-top: 00px;
+    animation-name: ani2;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.img3{
+    margin-left: 400px;
+    
+    width: 1000px;
+    height: 800px;
+    margin-top: 00px;
+    animation-name: ani3;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.img4{
+    margin-left: 400px;
+    
+    width: 1000px;
+    height: 800px;
+    margin-top: 00px;
+    animation-name: ani4;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes ani1{
+0%{
+    margin-left: 0px;
+    opacity: 1;
+}
+25%{
+    margin-left: -1400px;
+    opacity: 0;
+}
+50%{
+    opacity: 0;
+    margin-left: -2800px;
+}
+75%{
+    opacity: 0;
+    margin-left: -4200px;
+}
+100%{
+    margin-left: 0px;
+    opacity: 1;
+}
+}
+@keyframes ani2{
+0%{
+    opacity: 0;
+}
+25%{
+    opacity: 1;
+}
+50%{
+    opacity: 0;
+}
+75%{
+    opacity: 0;
+}
+100%{
+    opacity: 0;
+}
+}
+@keyframes ani3{
+0%{
+    opacity: 0;
+}
+25%{
+    opacity: 0;
+}
+50%{
+    opacity: 1;
+}
+75%{
+    opacity: 0;
+}
+100%{
+    opacity: 0;
+}
+}@keyframes ani4{
+0%{
+    opacity: 0;
+}
+25%{
+    opacity: 0;
+}
+50%{
+    opacity: 0;
+}
+75%{
+    opacity: 1;
+}
+100%{
+    opacity: 0;
+
+}
+}

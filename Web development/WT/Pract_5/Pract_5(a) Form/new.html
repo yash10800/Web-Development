@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body bgcolor="black">
+<br>
+<font color="#ffcc00" size="7px" face="tahoma"><center><img src="unnamed.png" width="200px"><br>Student Registration Form</center></font>
+<form action="signup.html" method="put">
+	<br>
+<table width="60%" align="center" cellspacing="0" border="0">
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px" >First Name:</font><br></td>
+		<td bgcolor="black" align="center"><input type="text" name="f_name" placeholder="First Name" size="30" required maxlength="10" pattern="[A-Za-z]+"><font color="cyan" face="cursive" size="4px">(Required field with max 10 char)</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">Last Name:</font></td>
+		<td bgcolor="black" align="center"><input type="text" name="l_name" placeholder="Last Name" size="30" required maxlength="10" pattern="[A-Za-z]+"><font color="cyan" face="cursive" size="4px">(Required field with max 10 char)</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px">Date Of Birth:</font></td>
+		<td bgcolor="black" align="center"><input type="date" name="dob" width="30"><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp&emsp&emsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">Email Id:</font></td>
+		<td bgcolor="black" align="center"><input type="email" name="email" size="30">&emsp&emsp&emsp&emsp&emsp&emsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px">Mobile Number:</font></td>
+		<td bgcolor="black" align="center"><input type="text" name="mo_number" size="30" maxlength="10" min="999999999" pattern="[0-9]{10}">&emsp&emsp&emsp&emsp&emsp&emsp&nbsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">Gender:</font></td>
+		<td bgcolor="black" align="center"><font color="white" face="cursive" size="5px"><input type="radio" name="gender" value="gender" regired checked> Male &nbsp <input type="radio" name="gender" value="Gender"> Female</font><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp&nbsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="90px"><font color="orange" face="cursive" size="6px">Address:<br></font></td>
+		<td bgcolor="black" align="center"><textarea name="address" cols="23" rows="3" required></textarea><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp&nbsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">City:</font></td>
+		<td bgcolor="black" align="center">
+			<input list="city" size="30" required>
+			<datalist id="city">
+			<option value="Ahmedabad"></option>
+			<option value="Surat"></option>
+			<option value="Bharuch"></option>
+			<option value="Vadodara"></option>
+			<option value="Bhavnagar"></option>
+			<option value="Rajkot"></option>
+		</datalist><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px" >Picode:</font></td>
+		<td bgcolor="black" align="center"><input type="number" name="pin" size="30" required max="999999" min="99999"><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp&emsp&nbsp&nbsp&nbsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">Hobbies:</font></td>
+		<td bgcolor="black" colspan="2" align="center">&emsp&ensp<font color="white" face="cursive" size="5px"><input type="checkbox" name="programming"> Programming &nbsp <input type="checkbox" name="Reading"> Reading &nbsp <input type="checkbox" name="Singing"> Singing &nbsp <input type="checkbox" name="Writting"> Writting <br>•>others:<input type="text" name="others" size="30"></font>&emsp&emsp&emsp&emsp</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px">Review:</font></td>
+		<td bgcolor="black" colspan="2" align="center"><font color="orange" face="cursive" size="5px">0<input type="range" name="range" step="3" min="0" max="6">100</font>&emsp&emsp&emsp&emsp&emsp&emsp<br><font color="orange" face="cursive" size="5px">Bad &nbsp&nbsp Good &nbsp&nbsp Outstanding&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font>&emsp
+
+			<meter id="fuel"
+			       min="0" max="100"
+			       low="33" high="66" optimum="80"
+			       value="100" >
+
+			</meter>
+		</td>
+	</tr>
+
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="white" face="cursive" size="6px">Programme:</font></td>
+		<td bgcolor="black" align="center">
+			<select name="pets" id="pet-select" required>
+			    <option value="" selected disabled>--Please choose an option--</option>
+			    <option value="dog">CSE</option>
+			    <option value="cat">Electrical</option>
+			    <option value="hamster">Mechanical</option>
+			    <option value="parrot">Civil</option>
+			    <option value="spider">Ec</option>
+			    <option value="goldfish">Chemical</option>
+			</select><font color="cyan" face="cursive" size="4px">(Required field)</font>&emsp&emsp&emsp&emsp
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" width="20%" height="50px"><font color="orange" face="cursive" size="6px">Qualification:</font></td>
+		<td bgcolor="black" colspan="2" align="center">
+			<table>
+				<b><tr><td><font color="orange" face="cursive" size="5px">Examination</td><td align="center"><font color="orange" face="cursive" size="5px">Board</td><td align="center"><font color="orange" face="cursive" size="5px">Percentage</td><td><font color="orange" face="cursive" size="5px">Year Of Passing</td></tr></b>
+				<tr><td><font color="orange" face="cursive" size="5px">1. Class x</td><td><input type="text" maxlength="8" name="board" size="25"></td><td><input type="text" maxlength="8" name="Percentage" size="25"></td><td><input type="text" maxlength="8" name="Year" size="25"></td>
+				<tr><td><font color="orange" face="cursive" size="5px">2. Class xii</td><td><input type="text" maxlength="8" name="board" size="25"></td><td><input type="text" maxlength="8" name="Percentage" size="25"></td><td><input type="text" maxlength="8" name="Year" size="25"></td>
+			</table>
+		</td>
+
+	</tr>
+	<tr>
+		<td colspan="3" bgcolor="black" height="30px"><center><input type="submit" value="Submit" size="20">&nbsp&nbsp<input type="reset" name="reset" size="20"></center></td>
+	</tr>
+	<tr>
+		<td align="center" colspan="3">
+		<label for="file"><font color="white" face="cursive" size="6px">File progress:</font></label>
+		<progress id="file" max="100" value="50" > 70% </progress>
+		</td>
+	</tr>
+	<tr>
+		<td><input type="file"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

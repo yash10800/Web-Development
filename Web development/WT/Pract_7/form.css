@@ -1,0 +1,81 @@
+
+.form_lay{
+    background-color: rgba(0, 0, 0, .5);
+    height: 600px;
+    width: 700px;
+    margin-top: 100px;
+    margin-left: 70px;    
+    border-radius: 40px;
+}
+.frame_lay{
+    height: 550px;
+    width: 650px;
+    margin-left: 23px;      
+}
+.head{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(16, 170, 16);
+}
+#text{
+    margin-left: 40px;
+    width: 250px;
+    height: 30px;
+    background: none;
+    color: grey;
+    border: none;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 4px solid white;
+
+}
+#button{
+    width: 150px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 70px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background: none;
+    transition-duration: 0.5s;
+}
+#button:hover{
+    background: white;
+    font-weight: bold;
+    width: 170px;
+    color: black;
+}
+.google{
+    height: 40px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;padding-top: 10px;
+    border: 5px solid  rgba(168, 12, 12, 0.7);
+    background: rgba(168, 12, 12, 0.7);
+    width: 70px;
+    transition-duration: 0.5s;
+}
+.facebook{
+    height: 40px;
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border: 5px solid  rgba(29, 17, 189, 0.7);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 70px;
+    background: rgba(29, 17, 189, 0.7);
+    transition-duration: 0.5s;
+    color: white;
+}
+.google:hover{
+    width: 100px;
+}
+.facebook:hover{
+    width: 100px;
+}

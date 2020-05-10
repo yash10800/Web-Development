@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Login/Registration Form Transition</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    #submit{
+      width: 250px;
+      border: none;
+      background-color: #d4af7a;
+      height: 30px;
+      border-radius: 30px;
+    }
+  </style>
+  <script src="script.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<p class="tip" style="font-family: cursive; font-size: 40px;margin-top: 0px;">Welcome to H.B.K New high school</p>
+<div class="cont">
+  <div class="form sign-in">
+    <h2>Signup here,</h2>
+    <form method="GET" id="form" name="signup" onsubmit="validation()">
+    <label>
+      <span id="el">Email</span>
+      <input type="email" name="s_email">
+      <div class="error_email_s">
+
+      </div>
+    </label>
+    <label>
+      <span id="pl">Enter Password</span>
+      <input type="password" name="s_pass">
+      <div class="error_pass_s">
+
+      </div>
+    </label>
+    <label>
+        <span id="pl">confirm Password</span>
+        <input type="password" name="s_cpass">
+        <div class="error_cpass">
+  
+        </div>
+      </label>
+    <p class="forgot-pass">Forgot password?</p>
+    <input type="submit" id="submit" value="Sign Up" style="margin-left: 160px; margin-top: 5px;margin-bottom: 30px;">
+  </form>
+    <button type="button" class="fb-btn" style="margin-top: -20px;">Connect with <span>facebook</span></button>
+    <a href="Pract_8_login.html" style="text-decoration: none;color: white;"><h6 style="height:50px;vertical-align:middle;width:200px;font-size: 20px;margin-left: 180px;background: #8E0E00;text-align: center;padding-top: 10px;border-radius: 30px;margin-top: 20px;">Sign In</a></h6>
+  </div>
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>One of us?</h2>
+        <p>If you already has an account, just sign in. school is waiting for you</p>
+      </div>
+      
+      <div class="img__btn">
+    <span class="m--up"><a href="Pract_8_login.html">Sign In</a></span>
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+  
+
+
+</body>
+</html>
